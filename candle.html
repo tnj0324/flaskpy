@@ -22,7 +22,7 @@ html, body, #container {
 anychart.onDocumentReady(function () {
     // The data used in this sample can be obtained from the CDN
     // https://cdn.anychart.com/csv-data/csco-daily.csv
-    anychart.data.loadCsvFile('hoge.py', function (data) {
+    anychart.data.loadCsvFile('http://127.0.0.1:8000/downloads/csco-daily.csv', function (data) {
         // create data table on loaded data
         var dataTable = anychart.data.table();
         dataTable.addData(data);

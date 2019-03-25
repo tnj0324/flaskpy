@@ -12,7 +12,7 @@ def hogehoge():
 @app.route('/downloads/<path:filename>')
 def download_file(filename):
     print(filename)
-    return send_from_directory('HTMLren/uchida',
+    return send_from_directory('data',
                                filename, as_attachment=True)
 
 if __name__ == "__main__":
